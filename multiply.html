@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Perkalian</title>
+</head>
+
+<body>
+
+  <audio id="myAudio">
+    <source src="wrong.mp3" type="audio/mpeg">
+  </audio>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <h2><span><i class="fa fa-trophy" aria-hidden="true"></i></span> Pilih Lah Jawaban Perkalian Berikut Dengan Tepat !!!</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Penjumlahan</a></li>
+            <li><a href="subtract.html">Pengurangan</a></li>
+            <li class="current"><a href="multiply.html">Perkalian</a></li>
+            <li><a href="divide.html">Pembagian</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <p id="gameover"></p>
+
+  <div class="wrapper">
+      <div class="equation">
+        <h1  id="num1" style="color:red;"></h1>
+        <h1 style="color: gray;">*</h1>
+        <h1  id="num2" style="color: aquamarine;">1</h1>
+        <h1  style="color: blue">=</h1>
+        <h1  style="color: black">?</h1>
+  </div>
+
+    <div class="answer-options">
+        <div class="options" style="background-color: #FE4A49">
+          <h1 id="option1">1</h1>
+        </div>
+        <div class="options" style="background-color: #87CEFA;">
+          <h1 id="option2">2</h1>
+        </div>
+        <div class="options" style="background-color:#00FF00;">
+          <h1 id="option3">3</h1>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+      <div class="info-container animate__animated animate__fadeInUp">
+          <div class="row">
+              <div class="col-md-4">
+                  <p>   Time: <span id="timer">60</span> seconds</p>
+              </div>
+  </footer>
+
+  <script src="multiply.js"></script>
+</body>
+
+</html>
