@@ -1,5 +1,5 @@
 let timer;
-let timeLimit = 5;
+let timeLimit = 60;
 let score = 0;
 let questionsRemaining = 5;
 
@@ -58,7 +58,7 @@ function clickOption(event) {
 
 function resetGame() {
     stopTimer();
-    timeLimit = 5;
+    timeLimit = 60;
     score = 0;
     questionsRemaining = 5;
     document.getElementById('timer').textContent = timeLimit;
